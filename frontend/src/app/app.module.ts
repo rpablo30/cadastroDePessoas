@@ -29,7 +29,8 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     HomeComponent,
     RedDirective,
     ForDirective,
-    ProductCreateComponent
+    ProductCreateComponent , 
+    
   ],
   imports: [
     BrowserModule,

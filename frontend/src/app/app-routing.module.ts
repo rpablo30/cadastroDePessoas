@@ -2,10 +2,9 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
 import { HomeComponent } from "./views/home/home.component";
-import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
 import { ProductCrudComponent } from "./views/home/product-crud/product-crud.component";
 
-const routes: Routes = [
+const routesLocal: Routes = [
   {
     path: "",
     component: HomeComponent,
@@ -17,7 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routesLocal)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
