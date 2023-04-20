@@ -5,6 +5,7 @@ import { HomeComponent } from "./views/home/home.component";
 import { ProductCrudComponent } from "./views/home/product-crud/product-crud.component";
 import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
 import { ProductReadComponent } from "./components/product/product-read/product-read.component";
+import { ProductRead2Component } from "./components/product/product-read2/product-read2.component";
 
 const routesLocal: Routes = [
   {
@@ -22,6 +23,10 @@ const routesLocal: Routes = [
   {
     path: "products/read",
     component: ProductReadComponent,
+  } ,
+  {
+    path: "products/read2",
+    component: ProductRead2Component,
   }
 ];
 

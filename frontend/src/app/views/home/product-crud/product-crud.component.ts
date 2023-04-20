@@ -28,6 +28,10 @@ export class ProductCrudComponent implements OnInit{
     console.log("Chamou os produtos cadastrados ")
     this.router.navigate(['/products/read'])
   }
+  navigateToProductCadastrado2(): void { 
+    console.log("Chamou os produtos cadastrados ")
+    this.router.navigate(['/products/read2'])
+  }
 
 
 
