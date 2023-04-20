@@ -14,6 +14,26 @@
       "id": 3,
       "name": "Samsung S20+",
       "price": 5000
+    },
+    {
+      "name": "PRoduto de teste",
+      "price": 125.98,
+      "id": 4
+    },
+    {
+      "name": "Primeiro teste de formulário ",
+      "price": "8.99",
+      "id": 5
+    },
+    {
+      "name": "Geladeira",
+      "price": "1940.40",
+      "id": 6
+    },
+    {
+      "name": "Notebook",
+      "price": "3000,82",
+      "id": 7
     }
   ]
 }
