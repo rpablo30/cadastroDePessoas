@@ -1,3 +1,8 @@
+    <ul>
+        <li *ngFor="let product of products">
+            {{product.id}} || {{product.name}} => {{product.price}} 
+        </li>
+    </ul>
 
     
     <button mat-raised-button (click)="cancelarProduct()">

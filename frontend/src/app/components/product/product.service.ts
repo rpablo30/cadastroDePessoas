@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
+  
 
   baseUrl: "http://localhost:3001/products " = "http://localhost:3001/products ";
  
@@ -27,6 +28,9 @@ export class ProductService {
    
   }
 
+  read(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.baseUrl)
+  }
 
 
 
