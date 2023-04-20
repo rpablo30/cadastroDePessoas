@@ -25,4 +25,20 @@ export class ProductCrudComponent implements OnInit{
     this.router.navigate(['/product/create'])
   }
 
+
+
+
+
+
+  
+  navigateToProductCadastrado(): void { 
+    console.log("Chamou os produtos cadastrados ")
+    this.router.navigate(['/products/read'])
+  }
+
+  navigateToDeleteProduct(): void { 
+    console.log("Chamou o delete. ")
+    this.router.navigate(['/product/delete'])
+  }
+
 }
