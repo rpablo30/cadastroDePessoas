@@ -17,7 +17,7 @@ export class ProductReadComponent implements OnInit {
 
   }
 
-
+  
   cancelarProduct() : void { 
     this.router.navigate(['/products'])
     console.log("Cancelou e voltou para NOVO PRODUCT ")
