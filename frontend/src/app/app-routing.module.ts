@@ -6,6 +6,7 @@ import { ProductCrudComponent } from "./views/home/product-crud/product-crud.com
 import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
 import { ProductReadComponent } from "./components/product/product-read/product-read.component";
 import { ProductRead2Component } from "./components/product/product-read2/product-read2.component";
+import { ProductUpdateComponent } from "./components/product/product-update/product-update.component";
 
 const routesLocal: Routes = [
   {
@@ -27,6 +28,10 @@ const routesLocal: Routes = [
   {
     path: "products/read2",
     component: ProductRead2Component,
+  },
+  {
+    path: "products/update/:id",
+    component: ProductUpdateComponent,
   }
 ];
 
