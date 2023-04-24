@@ -1,5 +1,8 @@
+import { Product } from './../product-model';
+
+import { ActivatedRoute, Router } from '@angular/router';
+import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-update',
@@ -7,21 +10,40 @@ import { Router } from '@angular/router';
   styleUrls: ['./product-update.component.css']
 })
 export class ProductUpdateComponent implements OnInit {
+  
+  
  
-  constructor(private router : Router){
+
+
+  constructor(
+    private productService :ProductService ,
+    private router : Router , 
+    private route : ActivatedRoute
+
+    ){
 
 
   }
+  
+ 
+  
+  ngOnInit(): void {
 
-  cancelarProduct() : void { 
+   
+    
+   
+  }
+  
+  
+  updateProduct(): void {
+    
+
+  }
+   cancelarProduct() : void { 
     this.router.navigate(['/products/read'])
-    console.log("Cancelou e voltou para NOVO PRODUCT ")
     
   }
   
   
-  ngOnInit(): void {
-   
-  }
 
 }
