@@ -23,7 +23,10 @@ export class ProductUpdateComponent implements OnInit {
 
 
   }
-  
+  product : Product = {
+    name : ''  , 
+    price : 0 
+   }
  
   
   ngOnInit(): void {
