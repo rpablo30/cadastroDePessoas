@@ -1,7 +1,6 @@
+import { ProductService } from './../product.service';
+import { Product } from './../product.model';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { Product } from '../product-model';
-import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-product-read',
@@ -9,32 +8,16 @@ import { ProductService } from '../product.service';
   styleUrls: ['./product-read.component.css']
 })
 export class ProductReadComponent implements OnInit {
-  
 
-  products: Product[] = [];
-  displayedColumns = ['id' , 'name' , 'price' , 'action'] ;
+  products: Product[]
+  displayedColumns = ['id', 'name', 'price', 'action']
   
-  constructor( private productService: ProductService,private router : Router){
+  constructor(private productService: ProductService) { }
 
-  }
-
-  
-  cancelarProduct() : void { 
-    this.router.navigate(['/products'])
-    console.log("Cancelou e voltou para NOVO PRODUCT ")
-    
-  }
-   
-  
   ngOnInit(): void {
-
-      this.productService.read().subscribe(products => {
-        this.products = products 
-        console.log(products)
-      })
-    
-    
-
+    this.productService.read().subscribe(products => {
+      this.products = products
+    })
   }
 
 }
