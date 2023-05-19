@@ -29,6 +29,11 @@
       "name": "computador",
       "price": "2900.20",
       "id": 8
+    },
+    {
+      "name": "caixa jbl",
+      "price": "380.00",
+      "id": 9
     }
   ]
 }
