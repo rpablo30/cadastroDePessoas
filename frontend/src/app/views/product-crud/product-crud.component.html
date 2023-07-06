@@ -1,7 +1,16 @@
-
-<button mat-raised-button (click)="navigateToProductCreate()"
-    color="primary">
-    Novo Produto
+<button mat-raised-button (click)="navigateToProductCreate()" color="primary">
+  Cardápios
 </button>
-
-<app-product-read></app-product-read>
+<div>
+  <div role="tab"
+  class="ant-tabs-tab-active ant-tabs-tab";
+  style="margin-right: 4px;";>
+    <app-product-read></app-product-read>
+  </div>
+ 
+  <div role="tab"
+  class="ant-tabs-tab-active ant-tabs-tab";
+  style="margin-right: 4px;";>
+    <app-product-read></app-product-read>
+  </div>
+</div>
